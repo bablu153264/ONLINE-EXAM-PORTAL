@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+14
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam</title>
+<link rel="stylesheet" href="../../css/test.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap"
+rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Galada&d
+isplay=swap" rel="stylesheet">
+</head>
+<body class="body" onload="openFullscreen()">
+<div id="container" style=" position: absolute; top: 0;
+right: 0;">
+<video autoplay="true" id="videoElement" style="width: 300px; height:
+300px;">
+</video>
+</div>
+<script>
+var video = document.querySelector("#videoElement");
+if (navigator.mediaDevices.getUserMedia) {
+navigator.mediaDevices.getUserMedia({ video:true})
+.then(function (stream) {
+video.srcObject = stream;
+})
+.catch(function (err0r) {
+console.log("Something went wrong!");
+});
+}
+</script>
+<div class="menu">
+<div id="menutitle">
+EXAMTANTRA
+</div>
+</div>
+<div class="bc">
+<div class="course">
+Time left: <p id="result"></p>
+<script>
+var countDownDate=endTime;
+var myfunc = setInterval(function() {
+var now = new Date().getTime();
+var timeleft =300 ;
+15
+var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 *
+60 * 60));
+var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 *
+60));
+var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+var result =hours+" h "+minutes+" m "+seconds+" s ";
+document.getElementById("result").innerHTML = result;
+if (timeleft < 0) {
+clearInterval(myfunc);
+var result = "Time Up!";
+document.getElementById(".submit").innerHTML = result;
+window.location.replace("http://localhost:3001/admin/course");
+}
+}, 1000);
+</script>
+</div>
+<div class="mainp">
+<div class="name">
+Please find your Questions below
+</div>
+<div class="Questions">
+<form method="post" action="/student/test/<%=testId%>"
+enctype="multipart/form-data">
+<% for( let index = 0; index < questions.length; index++ ) { %>
+<div>
+<h3 class="hh">Question <%=index+1%>:</h3>
+<img class="image" src="<%=questions[index].imageUrl[0] %>"
+alt="Question1">
+<input type="file" name="file<%=index +1 %>">
+<label name="label<%=index+1%>" style="visibility:
+collapse;"><%=questions[index].questionId%></label>
+</div>
+<% } %>
+<br>
+<br>
+<input type="submit" class="submit"></button>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

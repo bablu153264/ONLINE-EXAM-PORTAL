@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+10
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>examtantra</title>
+<link rel="stylesheet" href="/css/styleexam.css" />
+<style> @import
+url('https://fonts.googleapis.com/css2?family=Birthstone&family=Stick+No+Bills
+:wght@500&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Birthstone&family=Stick+No+Bills
+:wght@500&family=Unica+One&display=swap');
+@import
+url("https://fonts.googleapis.com/css? family=Lora:400,400i,700,700i");
+@import url("https://acupoftee.github.io/fonts/Clip.ttf");
+.bookbug{
+font-family: 'Stick No Bills', sans-serif;
+}
+.fontt{
+font-family: 'Unica One', cursive;
+}
+.fontt{
+color-adjust: white;
+color: white;
+}
+.features{
+font-family: 'Unica One', cursive;
+font-size: 50px;
+}
+body{
+background-color:#040505;
+}
+.footer{
+font-family: 'Unica One', cursive;
+}
+.dropbtn {
+border-radius: 50%;
+color: rgb(3, 3, 3);
+padding: 16px;
+font-size: 16px;
+text-align:center;
+border: none;
+11
+background-color: transparent;
+}
+.dropdown {
+position: right;
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: left;
+background-color: aliceblue;
+}
+.dropdown-content a {
+color: black;
+padding: 10px 10px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content .drop:hover{background-color: rgb(0, 195, 255);}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #42bcc5;}
+.row1{flex-direction: row;}
+.row1{
+display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+justify-content: space-around;
+padding-left: 70px;
+}
+.row11{width:250px;height:150%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0,
+0, 0.19);background-color: rgb(226, 226, 226);margin-top: 20px;border-radius:
+10%;}p{text-align: center; }h1{text-align: center;}
+h2 {text-align: center;align-items: center;padding: 20px; height:70px;
+color:white; background-color: rgb(221, 128, 240);
+background-image: url(img/h2b.jpg); background-size: 100% 70%;}
+img{width:100%;height:200px;} button{ background-color: rgb(32, 32, 32);
+width:100%;height:30px;}
+button:hover{background-color: rgb(11, 53, 100);}
+section {min-height: 130vh; }
+</style>
+</head>
+<body>
+12
+<header class="header" style="color: rgb(252, 249, 249); background-image:
+linear-gradient(0deg, #23374D,#23374D);">
+<div class="header_img_div">
+<img src="img/bh.png" style="height: 130px;width: 130px; margin:
+0%; padding-right: 2px;">
+</div>
+<ul class="fontt">
+<li ><a href="/"><img src="img/home.png" style="width:
+20px;height:
+20px;">&nbsp;&nbsp;<b>HOME&nbsp;&nbsp;&nbsp;&nbsp;</b></span></a></li>
+<li><a href="/login"><img src="img/login.png" style="width:
+18px;height:
+20px;">&nbsp;&nbsp;<b>LOGIN&nbsp;&nbsp;&nbsp;&nbsp;</b></span></a></li>
+</ul>
+</header>
+<div class="home" id="home">
+<h1 class="bookbug">
+EXAMTANTRA
+</h1>
+<p><span class="read">Your <span class="flicker">Virtual</span> Exam
+Room!</span></p>
+</div>
+<section style="color: black; background-image: linear-gradient(0deg,
+#1f1f1f,#3e73ac,#040505,#000);">
+<h2 class="features"><span class="flicker">OUR FEATURES</span></h2>
+<div class="row1">
+<div class="row11" id="row11"><img src="img/w1.png" alt="" width="24%"
+height="60%">
+<h1>Video Proctoring</h1>
+<p>Testing and assessment platform with remote proctoring
+Secure digital vault for question banks<br>Unlimited test support with
+complete data isolation by domain, Plagiarism reports, Rich analytics
+</p>
+<button> <a target="_blank" href="#">Here's why</button></div></a>
+<div class="row11" id="row12"><img src="img/w2.jpg" alt="" width="24%"
+height="60%">
+<h1>AI assisted </h1>
+<p>Comprehensive assessment platform with support <br>for a variety of
+tests & an ultra-powerful remote<br> proctoring solution for
+<br>uncontrollable test-taker environments</p>
+<button><a target="_blank" href="#">Here's why</button></div></a>
+<div class="row11" id="row13"><img src="img/w3.png" alt="" width="24%"
+height="60%">
+<h1>Virtual Assessments</h1>
+<p>Manually evaluated question <br>types include subjective <br>essay,
+viva voce, document upload, etc.
+<br>Timed assignments and self-paced exercises and Rich analytics</p>
+<button><a target="_blank" href="#">Here's why</button></div> </a>
+13
+</div>
+</section>
+<footer id="footer" class="footer">
+<div class="footer-contact">
+<div class="footer-contact-us">
+<h1>Contact Us</h1>
+<div class="footer-socials">
+<a href="http://www.youtube.com" target="_blank" rel="noopener
+noreferrer" style="color: black;"><img src="img/wats.png" style="width: 50px;
+height: 40px;"></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="http://www.linkedin.com/in" target="_blank" rel="noopener
+noreferrer" style="color: black;"><img src="img/l.png" style="width: 40px;
+height: 40px;"></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="http://www.instagram.com" target="_blank" rel="noopener
+noreferrer" style="color: black;"><img src="img/in.png" style="width: 35px;
+height: 35px;"></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="http://www.gmail.com" target="_blank" rel="noopener
+noreferrer" style="color: black;"><img src="img/g.png" style="width: 40px;
+height: 40px;"></a>
+<!-- Social buttons -->
+</div></div>
+<div class="footer-contact-us">
+<h1>Want Us to contact you?</h1>
+<form class="contact" action="mailto:naman@gmail.com"
+method="post">
+<textarea name="Senders name: " rows="1" cols="32.5"
+placeholder="Name"></textarea><br>
+<textarea name="Senders query: " rows="2" cols="33"
+placeholder="Message"></textarea><br>
+<button class="footer-btn" type="submit"
+name="button">SEND</button>
+</form>
+</div>
+</div>
+<div class="lastfoot" style="background-color: rgb(49, 46, 46);
+height: 30px;">
+<div class="footer-copyright text-center py-3" style="padding: 5px;">©
+2021 Copyright:
+<a class="footer-link" href="/contactus" style="font-size: 15px;">
+Iwp</a>
+<a class="footer-link" href="https://vit.ac.in/" style="text-align:
+justify; font-size: 15px;"> Vit Vellore</a>
+</div></div>
+</footer>
+</body>
+</html>
